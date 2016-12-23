@@ -112,3 +112,23 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+
+
+## Running scripts and producing data
+
+###loadData.R
+
+This helper script/function loadData will try to download raw data if the raw data does not exist in the working directory, it will then filter data by the dates we care about which is 2007-02-01 and 2007-02-02 and also concat the date and time and convert to DateTime column 
+
+###plot*.R
+
+Detailed descriptions of these scripts are in the comments of the source code, but essentially, these scripts load data using helper function loadData and then make plots according to the instructions.
+
+You can simply run these scripts by source("plot*.R") which will load data, and output corresponding plots
+
+###plot*.png
+These images are output, with given height and width, produced by scripts aforementioned.
+
+
+
+
